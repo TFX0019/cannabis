@@ -1,0 +1,295 @@
+<div class="portada">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" routerLink="/home">
+      <img src="../../../assets/images/logo.png" width="200" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <h1 class="title wow slideInDown">Green Headway International</h1>
+  <h3 class="subtitle wow slideInDown">Get To Know, The New Of Harvest!</h3>
+
+  <div class="portada_footer">
+    <div class="line"></div>
+    <p class="p-0 mb-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed.</p>
+    <a class="make" href="">make a green change</a>
+    <div class="mt-3 redes_s">
+      <a href=""><i class="fab fa-facebook-square"></i></a>
+      <a href=""><i class="fab fa-twitter-square"></i></a>
+      <a href=""><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+</div>
+
+<!-- primera seccion -->
+<div class="container firs">
+  <div class="row mt-5">
+    <div class="col-md-4"></div>
+    <div class="col-md-8">
+      <h1 class="h2 title">We Make a Green Change.</h1>
+      <p class="text-muted">In <strong>GREEN HEADWAY INTERNATIONAL</strong> we are an organization and community dedicated to the
+        research, planting, use
+        of seeds, cultivation, and manufacturing of organic and medicinal products based on cannabis, using unique
+        models of technology to promote organic self-cultivation in order to try to combat genetically modified crops,
+        and that the world population has access to healthy and organic green food and products through decentralized
+        crops.</p>
+    </div>
+    <div class="col-md-12 mt-5 text-muted wow slideInDown">
+      <strong>GREEN HEADWAY INTERNATIONAL</strong> was founded in 2015 by a team of passionate farmers and cannabis
+      researchers, among
+      others. Our ideal is to revolutionize the new era of organic and cannabis cultivation by making organic and
+      chemical-free products available worldwide, thanks to our disruptive agricultural technology, intelligent
+      software and blockchain. By working towards this goal, our goal is to gradually fulfill the so-called concept of
+      <strong>ORGANIC BY GREENGOLD ™</strong>. In addition to making the blockchain part of the technology to ensure
+      that the product
+      grown with <strong>GREENDOOR TECH ™</strong> will be completely free of chemicals in 2020, ensuring its
+      traceability from the
+      seed. through the new technologies available today by implementing a new ecosystem of decentralized organics to
+      bring quality products and services to our users. Educating them so that everyone can enter the new era of
+      Blockchain Decentralized technology and organic gardening.
+    </div>
+  </div>
+</div>
+
+<!-- tarjetas -->
+<div class="bg_d mt-5 pb-5 card_1">
+  <div class="container py-5">
+    <h2 class="h2 text-center mt-5">Greengold Ecosystem</h2>
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card pb-4">
+          <div class="card-body">
+            <h3>GreenGoold <br>
+              Token</h3>
+            <img src="../../../assets/images/card1.jpg" alt="">
+            <p class="mb-4">It is the token and engine that will be used as a means of trasfer in our ecosystem, so that everyone has access to Organics Products through GreenGold in our smart contract and DApp</p>
+            <a class="make">know more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card pb-4">
+          <div class="card-body">
+            <h3>DApp Green <br>
+              Headway Economy</h3>
+            <img src="../../../assets/images/card1.jpg" alt="">
+            <p class="mb-4">Soon, our smart software GREENDOOR Dapp will be Launched, an application that allows you to remotely monitor your greendor and have access to products grown by other greendor anywhere in the word</p>
+            <a class="make">know more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card pb-4">
+          <div class="card-body">
+            <h3>GreenDoor <br>
+              TECH Series</h3>
+            <img src="../../../assets/images/card1.jpg" alt="">
+            <p class="mb-4">Hydroponic Disruptive Agricultural Technology, Automated for Growing Organic
+              Products and
+              Mushrooms anywhere in the world, regardless of weather conditions</p> <br>
+            <a class="make">know more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- noticias -->
+
+<div class="container mt-5 pb-5 news">
+  <h2>Bussines Oportunity</h2>
+  <div class="row mb-5">
+    <div class="col-md-12 mt-5" *ngFor="let n of noticias">
+      <div class="n_c" style="margin-left: 3%;">
+        <div class="row">
+          <div class="col-md-4">
+            <img [src]="n.image" class="img_new" width="100%" alt="">
+          </div>
+          <div class="col-md-8">
+            <h5 class="mt-3">{{ n.title }}</h5>
+            <p class="mb-4">{{ n.description }}</p>
+            <a class="enlace" [routerLink]="['/new', n.id]">See More</a>
+          </div>
+        </div>
+        <div class="px-4 py-2 d-flex justify-content-between align-items-center">
+          <h6>{{ n.fecha }}</h6>
+          <h6 class="d-flex justify-content-between align-items-center">
+            Compartir en: <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="w-100 text-center">
+    <a class="make" href="">VER MAS NOTICIAS</a>
+  </div>
+</div>
+
+
+<div class="bg_img mt-5">
+  <div class="container py-5">
+    <h2 class="h2 text-center">Greengold Ecosystem</h2>
+    <div class="row mt-3 text-center">
+      <div class="col-md-4">
+        <div class="card pb-4">
+          <div class="card-body">
+            <h3>GreenDoor <br>
+              TECH Series</h3>
+            <img src="../../../assets/images/card1.jpg" alt="">
+            <p class="mb-4">Hydroponic Disruptive Agricultural Technology, Automated for Growing Organic
+              Products and
+              Mushrooms anywhere in the world, regardless of weather conditions</p>
+            <a class="make">know more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card pb-4 mt-4">
+          <div class="card-body">
+            <h3>GreenDoor <br>
+              TECH Series</h3>
+            <img src="../../../assets/images/card1.jpg" alt="">
+            <p class="mb-4">Hydroponic Disruptive Agricultural Technology, Automated for Growing Organic
+              Products and
+              Mushrooms anywhere in the world, regardless of weather conditions</p>
+            <a class="make">know more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card pb-4 mt-5">
+          <div class="card-body">
+            <h3>GreenDoor <br>
+              TECH Series</h3>
+            <img src="../../../assets/images/card1.jpg" alt="">
+            <p class="mb-4">Hydroponic Disruptive Agricultural Technology, Automated for Growing Organic
+              Products and
+              Mushrooms anywhere in the world, regardless of weather conditions</p>
+            <a class="make">know more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container text-center save_planet">
+  <h2>Save the planet with Us</h2>
+  <h5>Green Headway Foundation</h5>
+  <div class="row text-center mt-5">
+    <div class="col-md-4">
+      <img src="../../../assets/images/arbol.svg" width="100" height="100" alt="">
+      <h3>Title</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laudantium autem perspiciatis inventore.
+        Possimus expedita minus voluptates sit blanditiis, est molestiae, atque, enim quae odit minima officiis sapiente
+        explicabo repudiandae!</p>
+    </div>
+    <div class="col-md-4">
+      <img src="../../../assets/images/heart.svg" width="100" height="100" alt="">
+      <h3>Title</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laudantium autem perspiciatis inventore.
+        Possimus expedita minus voluptates sit blanditiis, est molestiae, atque, enim quae odit minima officiis sapiente
+        explicabo repudiandae!</p>
+    </div>
+    <div class="col-md-4">
+      <img src="../../../assets/images/circle.svg" width="100" height="100" alt="">
+      <h3>Title</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laudantium autem perspiciatis inventore.
+        Possimus expedita minus voluptates sit blanditiis, est molestiae, atque, enim quae odit minima officiis sapiente
+        explicabo repudiandae!</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container mt-5 mb-3 slide_">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="w-100" src="../../../assets/images/card1.jpg" alt="">
+        </div>
+        <div class="col-md-6">
+          <h2>Titulo del articulo</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident praesentium perferendis distinctio unde? Nostrum illum ex, voluptatum velit totam suscipit veritatis porro nihil minus soluta laboriosam, vel repellat voluptate! Repellendus!</p>
+          <a class="make" href="">Ver más</a>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="w-100" src="../../../assets/images/card1.jpg" alt="">
+        </div>
+        <div class="col-md-6">
+          <h2>Titulo del articulo</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident praesentium perferendis distinctio
+            unde? Nostrum illum ex, voluptatum velit totam suscipit veritatis porro nihil minus soluta laboriosam, vel
+            repellat voluptate! Repellendus!</p>
+          <a class="make" href="">Ver más</a>
+        </div>
+      </div>
+    </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="row">
+          <div class="col-md-6">
+            <img class="w-100" src="../../../assets/images/card1.jpg" alt="">
+          </div>
+          <div class="col-md-6">
+            <h2>Titulo del articulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident praesentium perferendis distinctio
+              unde? Nostrum illum ex, voluptatum velit totam suscipit veritatis porro nihil minus soluta laboriosam, vel
+              repellat voluptate! Repellendus!</p>
+            <a class="make" href="">Ver más</a>
+          </div>
+        </div>
+      </ng-template>
+      
+  </owl-carousel-o>
+</div>
+
+
+
+<app-footer></app-footer>

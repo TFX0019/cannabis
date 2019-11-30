@@ -1,0 +1,53 @@
+// ##############################
+// fuentes
+// ##############################
+
+@font-face {
+  font-family: 'selima';
+  src: url(../../../assets/fonts/selima_.otf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../../../assets/fonts/Poppins-Light.otf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../../../assets/fonts/Poppins-Regular.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../../../assets/fonts/Poppins-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../../../assets/fonts/Poppins-ExtraBold.otf);
+  font-weight: 900;
+}
+
+.new_d {
+    font-family: poppins;
+    h3 {
+        font-weight: bold;
+        color: #80F052;
+    }
+    .text-green {
+       color: #80F052;
+    }
+        h6 {
+          color: gray;
+          font-size: .8rem;
+
+          a {
+            font-size: 25px;
+            color: #80F052;
+            margin: 0 5px;
+          }
+        }
+}

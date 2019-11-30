@@ -1,0 +1,36 @@
+<div class="container mt-5">
+    <h3 *ngIf="!idnoticia; else ott">Agregar Noticia</h3>
+    <ng-template #ott>
+        <h3>Editar Noticia</h3>
+    </ng-template>
+    <form [formGroup]="newsForm" (ngSubmit)="addnoticia()">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Titulo de la noticia</label>
+                  <input type="text" class="form-control" formControlName="title" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small class="text-danger" *ngIf="validate.title == true; else sone">Campo invalido</small>
+                  <ng-template #sone></ng-template>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="">Texto de la noticia</label>
+                  <textarea formControlName="text" class="form-control" placeholder="Escribe tu articulo"></textarea>
+                  <small class="text-danger" *ngIf="validate.text == true; else sone">Campo invalido</small>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="imagen">Imagen</label>
+                  <input type="file" (change)="uploadFile($event)" class="form-control" id="imagen"
+                    aria-describedby="emailHelp">
+                    <p><small>Subida: {{ porcentaje }}%</small></p>
+
+                    <img class="w-25" [src]="imageSrc" alt="">
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success">Publicar</button>
+    </form>
+</div>

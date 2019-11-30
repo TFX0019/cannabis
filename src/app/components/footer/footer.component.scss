@@ -1,0 +1,89 @@
+
+// ##############################
+// fuentes
+// ##############################
+
+@font-face {
+  font-family: 'selima';
+  src: url(../../../assets/fonts/selima_.otf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../../../assets/fonts/Poppins-Light.otf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../../../assets/fonts/Poppins-Regular.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../../../assets/fonts/Poppins-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../../../assets/fonts/Poppins-ExtraBold.otf);
+  font-weight: 900;
+}
+
+// ##############################
+// variables
+// ##############################
+$gris: #585857;
+
+
+.susc {
+  background: #EEEEEE;
+  padding: 2% 0;
+  font-family: poppins;
+  h3 {
+      color: $gris;
+      font-weight: bold;
+  }
+.form-control {
+  border-radius: 0;
+  &:focus {
+      border-color:#495057;
+      box-shadow: none;
+  }
+}
+
+.btn {
+  border-radius: 0;
+  border: none;
+  background: #338E31;
+  background-image: linear-gradient(90deg, #338E31, #80F052);
+  color: #fff;
+  font-family: poppins;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+}
+
+
+.footer {
+  background: #338E31;
+  padding-top: 4%;
+  padding-bottom: 2%;
+  background-image: linear-gradient(90deg, #338E31, #80F052);
+  font-family: poppins;
+  h2 {
+    font-weight: bold;
+    color: #fff;
+  }
+  .cp {
+      color: $gris;
+  }
+.redes_f {
+    a {
+            color: #fff;
+            text-decoration: none;
+    }
+}
+}

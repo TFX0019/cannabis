@@ -1,0 +1,338 @@
+// ##############################
+// fuentes
+// ##############################
+
+@font-face {
+    font-family: 'selima';
+    src: url(../../../assets/fonts/selima_.otf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../../../assets/fonts/Poppins-Light.otf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../../../assets/fonts/Poppins-Regular.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../../../assets/fonts/Poppins-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../../../assets/fonts/Poppins-ExtraBold.otf);
+  font-weight: 900;
+}
+
+// ##############################
+// variables
+// ##############################
+$gris: #585857;
+
+
+// ##############################
+// portada
+// ##############################
+.portada {
+    width: 100%;
+    height: 100vh;
+    background: url(../../../assets/images/portada.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    .subtitle {
+        font-family: 'selima';
+        font-size: 3em;
+        text-shadow: 0 0 5px #fff;
+    }
+    .title {
+        margin-top: 10%;
+        color: #fff;
+        text-shadow: 0 0 5px #fff;
+        font-family: poppins;
+        font-weight: 900;
+        font-size: 3.5em;
+    }
+    .portada_footer {
+      position: absolute;
+      bottom: 3%;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      p {
+        color: #80F052;
+        font-family: poppins;
+        font-weight: 100;
+      }
+      a.make {
+        text-decoration: none;
+        color: white;
+        padding: 0;
+        margin: 0;
+        padding: 10px 50px;
+        background-color: #80F052;
+        border-radius: 25px;
+        font-family: poppins;
+        font-weight: bold;
+      }
+      .line {
+        width: 70px;
+        margin-bottom: 5px;
+        height: 3px;
+        display: inline-block;
+        background-color: #80F052;
+      }
+    }
+    .redes_s {
+      a {
+        font-size: 25px;
+        color: #80F052;
+        margin: 0 5px;
+      }
+    }
+}
+
+.firs {
+  font-family: poppins;
+}
+
+    .title {
+      font-family: poppins;
+      font-weight: bold;
+      color: #80F052;
+    }
+
+
+
+    .bg_d {
+        width: 100%;
+        background: url(../../../assets/images/bg-01.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .n_c {
+        background-color: #EFEFEF;
+        background-size: 90%;
+    }
+
+    .bg_img {
+        width: 100%;
+        height: 100vh;
+        background: url(../../../assets/images/bg2-01.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        .card_d {
+            background: #338E31;
+            background-image: linear-gradient(0deg, #338E31, #80F052);
+        }
+    }
+
+// ##############################
+// tarjetas
+// ##############################
+
+    .card_1 {
+      h2 {
+        color: #fff;
+      font-family: poppins;
+      font-weight: bold;
+      }
+      .card {
+        font-family: poppins;
+        text-align: center;
+        h3 {
+          color: #80F052;
+          font-weight: bold;
+        }
+        p {
+          color: $gris;
+        }
+        img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin: 20px 0;
+        }
+        a.make {
+          text-decoration: none;
+          color: white;
+          padding: 0;
+          margin: 0;
+          padding: 10px 50px;
+          background-color: #80F052;
+          border-radius: 25px;
+          font-family: poppins;
+          font-weight: bold;
+        }
+      }
+    }
+
+    // ##############################
+    // noticias
+    // ##############################
+    .news {
+      font-family: poppins;
+      h2 {
+      font-family: poppins;
+      font-weight: bold;
+      color: #80F052;
+      }
+      h5 {
+        color: #80F052;
+        font-family: poppins;
+        font-weight: bold;
+      }
+      p {
+        font-weight: 100;
+        color: $gris;
+        font-size: .8rem;
+      }
+        a.make {
+          text-decoration: none;
+          color: white;
+          padding: 0;
+          margin: 0;
+          padding: 10px 50px;
+          background-color: #80F052;
+          border-radius: 25px;
+          font-family: poppins;
+          font-weight: bold;
+        }
+        .img_new {
+          margin-top: -30px;
+          margin-left: -30px;
+          border-radius: 8px;
+        }
+        .n_c {
+          border-radius: 8px;
+          // padding-bottom: 50px;
+          width: 97%;
+          position: relative;
+          padding-right: 20px;
+        }
+        a.enlace {
+          text-decoration: none;
+          color: white;
+          padding: 0;
+          margin: 0;
+          padding: 5px 20px;
+          background-color: #80F052;
+          border-radius: 25px;
+          font-family: poppins;
+          font-weight: bold;
+        }
+        h6 {
+          color: $gris;
+          font-size: .8rem;
+          a {
+            font-size: 25px;
+            color: #80F052;
+            margin: 0 5px;
+          }
+        }
+
+    }
+
+    .bg_img {
+      h2 {
+        color: #fff;
+        font-family: poppins;
+        font-weight: bold;
+      }
+
+      .card {
+        font-family: poppins;
+        text-align: center;
+        background: #338E31;
+        background-image: linear-gradient(0deg, #338E31, #80F052);
+
+        h3 {
+          color: #fff;
+          font-weight: bold;
+        }
+
+        p {
+          color: #fff;
+        }
+
+        img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin: 20px 0;
+        }
+
+        a.make {
+          text-decoration: none;
+          color: white;
+          padding: 0;
+          margin: 0;
+          padding: 10px 50px;
+          background-color: #80F052;
+          border-radius: 25px;
+          font-family: poppins;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .save_planet {
+      font-family: poppins;
+      h2 {
+        color: #80F052;
+        font-weight: bold;
+      }
+      h5 {
+        color: $gris;
+        font-weight: bold;
+      }
+      h3 {
+        color: #80F052;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+      p {
+        font-size: .8rem;
+        color: $gris;
+      }
+    }
+
+    .slide_ {
+      font-family: poppins;
+      h2 {
+        color: #80F052;
+        font-weight: bold;
+      }
+      p {
+        color: $gris;
+      }
+        a.make {
+          text-decoration: none;
+          color: white;
+          padding: 0;
+          margin: 0;
+          padding: 10px 30px;
+          background-color: #80F052;
+          border-radius: 25px;
+          font-family: poppins;
+          font-weight: bold;
+        }
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #80F052;
+}
+    }
